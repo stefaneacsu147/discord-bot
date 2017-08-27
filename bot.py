@@ -8,17 +8,17 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('Connected! Logged in as')
+    print('Connnected! Logged in as')
     print(client.user.name)
     print(client.user.id)
     print('-----')
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('!botconnected'):
-        await client.send_message(message.channel, 'Yes, i am connected.')
+    if message.content.startswith('!status'):
+        await client.send_message(message.channel, 'I am here.')
     elif message.content.startswith('!flip'):
-        flip = random.choice(['Cap','Pajura'])
+        flip = random.choice(['Head','Coin'])
         await client.send_message(message.channel, flip)
     elif message.content.startswith('!addquote'):
         if not os.path.isfile("quote_file.pk1"):
