@@ -1,6 +1,2 @@
-# Discord Bot 
-
- 
- 
-
+# Discord Bot
 
