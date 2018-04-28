@@ -1,1 +1,1 @@
-# DiscordBot - Work in progress
+# DiscordBot
