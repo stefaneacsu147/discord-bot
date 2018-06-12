@@ -5,6 +5,9 @@ import json
 import os
 import time
 
+# Add your token here
+TOKEN = ''
+
 client = discord.Client()
 
 @client.event
@@ -64,5 +67,5 @@ async def on_message(message):
             await client.send_message(message.channel, 'You got it, congratulations!')
         else:
             await client.send_message(message.channel, 'Sorry. It was actually {}.'.format(answer))
-client.run('MzUxMzk4ODk2MTU4NzY5MTUz.DISByA.42FfN2pC9JIo0yJZb5F01gy3cbE')
+client.run(TOKEN)
 client.close()
